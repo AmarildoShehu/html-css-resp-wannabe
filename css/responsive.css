@@ -1,28 +1,36 @@
 /*Bonus:  fino ai 1160px il layout è un po’ troppo “rigido”
 Aggiungiamo una media query per sistemare il layout e non far comparire la scrollbar orizzontale.*/
-@media (max-width: 1160px){
+@media screen and (max-width: 1160px){
     .container{
         max-width: 1160px;
+        width: auto;
     }
 }
 
 /*Tablet dai 768px in giù*/
 
-@media (max-width: 768px){
-    .container{
-        max-width: 768px;
-    }
-}
+@media screen and (max-width: 768px){
+        .container{
+            max-width: 768px;
+        }    
+} 
+
 
 
 /*Mobile dai 576px in giù*/
 
-@media (max-width: 576px){
+@media screen and (max-width: 576px){
     .container{
         max-width: 576px;
     }
     .row {
+
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 40px;
+    }
+    .row .col{
+        width: 100%;
+    }
 }
