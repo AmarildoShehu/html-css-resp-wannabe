@@ -33,4 +33,9 @@ Aggiungiamo una media query per sistemare il layout e non far comparire la scrol
     .row .col{
         width: 100%;
     }
+    .why-us h2{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
 }
